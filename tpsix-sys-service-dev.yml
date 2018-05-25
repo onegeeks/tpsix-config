@@ -18,6 +18,7 @@ spring:
 sharding:
   jdbc:
     defaultDataSourceName:
+      type: com.zaxxer.hikari.HikariDataSource
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: 123
@@ -25,6 +26,7 @@ sharding:
     datasource:
       names: ds
       ds:
+        type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: 123
